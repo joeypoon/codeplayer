@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <title>Code Tester</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="menuBar">
+
+            <div id="logo">Code Tester</div>
+
+            <div id="buttonDiv">
+                <button id="runButton">Run</button>
+            </div>
+
+            <div id="toggleDiv">
+                <ul id="toggles">
+                    <li class="toggle selected">HTML</li>
+                    <li class="toggle">CSS</li>
+                    <li class="toggle">JS</li>
+                    <li class="toggle selected" style="border:none">Result</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="break"></div>
+
+        <div class="codeContainer" id="HTMLContainer">
+
+            <div class="codeLabel">HTML</div>
+            <textarea id="htmlCode" placeholder="Code here"><h1 id="test">Some HTML!</h1></textarea>
+
+        </div>
+
+        <div class="codeContainer" id="CSSContainer">
+
+            <div class="codeLabel">CSS</div>
+            <textarea id="cssCode" placeholder="Code here">html {background-color:blue}</textarea>
+
+        </div>
+
+
+        <div class="codeContainer" id="JSContainer">
+
+            <div class="codeLabel">JavaScript</div>
+            <textarea id="jsCode" placeholder="Code here">document.getElementById("test").innerHTML = "Success!"</textarea>
+
+        </div>
+
+        <div class="codeContainer" id="ResultContainer">
+
+            <div class="codeLabel">Result</div>
+            <iframe id="resultFrame"></iframe>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
